@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTRIBUTES</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        *{
+            background-color: black;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input{
+            background-color: #fff;
+            color: black;
+            border: none;
+            outline: none;
+        }
+        h3{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pending">
+        <h3>Remaining Attributes</h3>
+        <ol>
+            <li>async</li>
+            <li>defer</li>
+            <li>onabort</li>
+            <li>onafterprint</li>
+            <li>onbeforeprint</li>
+            <li>onbeforeunload</li>
+            <li>onblur</li>
+            <li>oncanplay</li>
+            <li>oncanplaythrough</li>
+            <li>onchange</li>
+            <li>onclick</li>
+            <li>oncontextmenu</li>
+            <li>oncopy</li>
+            <li>oncuechange</li>
+            <li>oncut</li>
+            <li>ondblclick</li>
+            <li>ondrag</li>
+            <li>ondragend</li>
+            <li>ondragenter</li>
+            <li>ondragleave</li>
+            <li>ondragover</li>
+            <li>ondragstart</li>
+            <li>ondrop</li>
+            <li>ondurationchange</li>
+            <li>onemptied</li>
+            <li>onended</li>
+            <li>onerror</li>
+            <li>onfocus</li>
+            <li>onhashchange</li>
+            <li>oninput</li>
+            <li>onkeydown</li>
+            <li>onkeypress</li>
+            <li>onkeyup</li>
+            <li>onload</li>
+            <li>onloadeddata</li>
+            <li>onloadedmetadata</li>
+            <li>onloadstart</li>
+            <li>onmousedown</li>
+            <li>onmousemove</li>
+            <li>onmouseout</li>
+            <li>onmouseover</li>
+            <li>onmouseup</li>
+            <li>onmousewheel</li>
+            <li>onoffline</li>
+            <li>ononline</li>
+            <li>onpagehide</li>
+            <li>onpagesshow</li>
+            <li>onpaste</li>
+            <li>onpause</li>
+            <li>onplay</li>
+            <li>onplaying</li>
+            <li>onpopstate</li>
+            <li>onratechange</li>
+            <li>onreset</li>
+            <li>onresize</li>
+            <li>onscroll</li>
+            <li>onsearch</li>
+            <li>onseeked</li>
+            <li>onseeking</li>
+            <li>onselect</li>
+            <li>onstalled</li>
+            <li>onstorage</li>
+            <li>onsubmit</li>
+            <li>onsuspend</li>
+            <li>ontimeupdate</li>
+            <li>ontoggle</li>
+            <li>onunload</li>
+            <li>onvolumechange</li>
+            <li>onwaiting</li>
+            <li>onwheel</li>
+            <li>autoplay</li>
+            <li>coords</li>
+            <li>data</li>
+            <li>default</li>
+            <li>dirname</li>
+            <li>download</li>
+            <li>kind</li>
+            <li>loop</li>
+            <li>media</li>
+            <li>muted</li>
+            <li>poster</li>
+            <li>preload</li>
+            <li>sandbox</li>
+            <li>shape</li>
+            <li>srcset</li>
+            <li>srclang</li>
+            <li>target</li>
+            <li>usermap</li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <h3>INPUT ACCEPT</h3>
+    <input type="file" id="img" name="img" accept="image/*">
+    <input type="submit">
+
+    <hr>
+
+    <h3>ACCESSKEY</h3>
+    <a href="https://www.vidhyaskillschool.com/" accesskey="v" title="VIDHYA SKILL SCHOOLS">VIDHYA SKILL SCHOOLS</a> <br>
+    <a href="https://www.cesltd.com/" accesskey="c" title="CES INFROMATION TECHNOLOGIES">CES IT</a>
+
+    <hr>
+
+    <h3>ACTION</h3>
+    <form action="/action_page.php" method="post">
+        <label for="pwd">Password:</label>
+        <input type="password" name="pwd"/>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <h3>AUTOCOMPLETE</h3>
+    <form action="/action_page.php" method="get" autocomplete="on">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    <h3>AUTOFOCUS</h3>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" autofocus><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    <h3>CHECKED</h3>
+    <form action="/action_page.php" method="get">
+        <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" name="vehicle3" value="Boat" checked>
+        <label for="vehicle3"> I have a boat</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <h3>CITE</h3>
+    <p><del cite="del_demo_cite.htm">This text has been deleted</del></p>
+
+    <hr>
+
+    <h3>COLS</h3>
+    <textarea rows="4" cols="30" >
+        At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+    </textarea>
+
+    <hr>
+
+    <h3>COLSPAN</h3>
+    <table>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td colspan="2">Sum: $180</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>CONTENT</h3>
+    <head>
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    </head>
+
+    <hr>
+
+    <h3>CONTENTEDITABLE</h3>
+    <p contenteditable="true">This is an editable paragraph.</p>
+
+    <hr>
+
+    <h3>CONTROLS</h3>
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <hr>
+
+    <h3>DATA-*</h3>
+    <ul>
+        <li data-animal-type="bird">Owl</li>
+        <li data-animal-type="fish">Salmon</li>
+        <li data-animal-type="spider">Tarantula</li>
+    </ul>
+      
+    <hr>
+
+    <h3>DATETIME</h3>
+    <p>
+        <del datetime="2015-11-15T22:55:03Z">This text has been deleted</del>
+    </p>
+
+    <hr>
+
+    <h3>DIR</h3>
+    <p dir="rtl">Write this text right-to-left!</p>
+
+    <hr>
+
+    <h3>DISABLED</h3>
+    <fieldset disabled>
+        <legend>Personalia:</legend>
+        Name: <input type="text"><br>
+        Email: <input type="text"><br>
+        Date of birth: <input type="text">
+    </fieldset>
+
+    <hr>
+
+    <h3>DRAGGABLE</h3>
+    <p draggable="true">This is a draggable paragraph.</p>
+
+    <hr>
+
+    <h3>ENCTYPE</h3>
+    <form action="/action_page_binary.asp" method="post" enctype="multipart/form-data">
+        First name: <input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <h3>FOR</h3>
+    <form action="/action_page.php">
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <h3>HEADERS</h3>
+    <table>
+        <tr>
+          <th id="name">Name</th>
+          <th id="email">Email</th>
+          <th id="phone">Phone</th>
+          <th id="addr">Address</th>
+        </tr>
+        <tr>
+          <td headers="name">John Doe</td>
+          <td headers="email">someone@example.com</td>
+          <td headers="phone">+45342323</td>
+          <td headers="addr">Rosevn 56,4300 Sandnes,Norway</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>HIDDEN</h3>
+    <p hidden>This paragraph should be hidden.</p>
+
+    <hr>
+
+    <h3>HIGH</h3>
+    <meter min="0" low="40" high="90" max="100" value="95"></meter>
+
+    <hr>
+
+    <h3>HREF</h3>
+    <a href="https://www.w3schools.com">W3Schools</a>
+
+    <hr>
+
+    <h3>ISMAP</h3>
+    <a href="/action_page.php">
+        <img src="https://th.bing.com/th/id/OIP.swPiIq-rGCarPbofX3hVRAHaEK?pid=ImgDet&rs=1" alt="W3Schools.com" width="100" height="132" ismap>
+    </a>
+
+    <hr>
+
+    <h3>LANG</h3>
+    <p lang="fr">Ceci est un paragraphe.</p>
+
+    <hr>
+
+    <h3>LIST</h3>
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Google Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+
+    <hr>
+
+    <h3>LOW</h3>
+    <meter min="0" low="40" high="90" max="100" value="95"></meter>
+
+    <hr>
+
+    <h3>MAX</h3>
+    <form action="/action_page.php">
+
+        Enter a date before 1980-01-01:
+        <input type="date" name="bday" max="1979-12-31">
+      
+        Enter a date after 2000-01-01:
+        <input type="date" name="bday" min="2000-01-02">
+      
+        Quantity (between 1 and 5):
+        <input type="number" name="quantity" min="1" max="5">
+      
+        <input type="submit">
+      
+    </form>
+
+    <hr>
+
+    <h3>MAXLENGTH</h3>
+    <form action="/action_page.php">
+        Username: <input type="text" name="usrname" maxlength="10"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <h3>METHOD</h3>
+    <form action="/action_page.php" method="get">
+        First name: <input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <h3>MIN</h3>
+    <form action="/action_page.php">
+
+        Enter a date before 1980-01-01:
+        <input type="date" name="bday" max="1979-12-31">
+      
+        Enter a date after 2000-01-01:
+        <input type="date" name="bday" min="2000-01-02">
+      
+        Quantity (between 1 and 5):
+        <input type="number" name="quantity" min="1" max="5">
+      
+        <input type="submit">
+      
+    </form>
+
+    <hr>
+
+    <h3>MULTIPLE</h3>
+    <form action="/action_page.php">
+        Select images: <input type="file" name="img" multiple>
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    <h3>NAME</h3>
+    <fieldset name="personalia">
+        Name: <input type="text"><br>
+        Email: <input type="text"><br>
+    </fieldset>
+
+    <hr>
+
+    <h3>NOVALIDATE</h3>
+    <form action="/action_page.php" novalidate>
+        E-mail: <input type="email" name="user_email">
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    <h3>ONIVALID</h3>
+    <form action="/action_page.php" method="get">
+        Name: <input type="text" oninvalid="alert('You must fill out the form!');" name="fname" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <h3>OPEN</h3>
+    <details open>
+        <summary>Introduction</summary>
+        <h5>Hi, I'm a UI Develpoer</h5>
+    </details>
+
+    <hr>
+
+    <h3>OPTIMUM</h3>
+    <meter value="0.3" high="0.9" low="0.1" optimum="0.5"></meter>
+
+    <hr>
+
+    <h3>PATTERN</h3>
+    <form action="/action_page.php">
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" pattern=".{8,}" title="Eight or more characters">
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    <h3>PLACEHOLDER</h3>
+    <form action="/action_page.php">
+        <label for="phone">Enter a phone number:</label><br><br>
+        <input type="tel" id="phone" name="phone" placeholder="1020304050"><br><br>
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    <h3>READONLY</h3>
+    <textarea readonly>
+        At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+    </textarea>
+
+    <hr>
+
+    <h3>REL</h3>
+    <link rel="stylesheet" href="css file"> <br>
+    Linking external style sheet
+
+    <hr>
+
+    <h3>REQUIRED</h3>
+    <select required>
+        <option value="">None</option>
+        <option value="car">Car</option>
+        <option value="bike">Bike</option>
+        <option value="flight">Flight</option>
+        <option value="ship">Ship</option>
+    </select>
+
+    <hr>
+    
+    <h3>REVERSED</h3>
+    <ol reversed>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <hr>
+
+    <h3>ROWSPAN</h3>
+    <table>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+          <th>Savings for holiday!</th>
+        </tr>
+        <tr>
+          <td>January</td>
+          <td>$100</td>
+          <td rowspan="2">$50</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>$80</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>SELECTED</h3>
+    <select required>
+        <option value="">None</option>
+        <option value="car">Car</option>
+        <option value="bike">Bike</option>
+        <option value="flight">Flight</option>
+        <option value="ship" selected>Ship</option>
+    </select>
+
+    <hr>
+
+    <h3>SIZE</h3>
+    <select size="2">
+        <option value="">None</option>
+        <option value="car">Car</option>
+        <option value="bike">Bike</option>
+        <option value="flight">Flight</option>
+        <option value="ship" selected>Ship</option>
+    </select>
+      
+    <hr>
+
+    <h3>SPELLCHECK</h3>
+    <p contenteditable="true" spellcheck="true">This is a praggagraph. It is editable. Try to change the text.</p>
+
+    <hr>
+
+    <h3>SRC</h3>
+    <img src="image link" alt="Alt display">
+
+    <hr>
+
+    <h3>START</h3>
+    <ol start="50">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <hr>
+
+    <h3>STEP</h3>
+    <form action="/action_page.php">
+        <label for="points">Values:</label>
+        <input type="number" id="points" name="points" step="3">
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    <h3>STYLE</h3>
+    <p>Used for CSS</p>
+
+    <hr>
+
+    <h3>TABINDEX</h3>
+    <div tabindex="1">W3Schools</div>
+    <div tabindex="3">Google</div>
+    <div tabindex="2">Microsoft</div>
+
+    <hr>
+
+    <h3>TRANSLATE</h3>
+    <p translate="no">Don't translate this!</p>
+    <p>This can be translated to any language.</p>
+
+    <hr>
+
+    <h3>VALUE</h3>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="John"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <h3>WIDTH</h3>
+    <img src="Image link" alt="Alt display" height="42" width="42">
+
+    <hr>
+
+</body>
+</html>
